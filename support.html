@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MinimaSTEPS — Support</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fafafa;
+      color: #333;
+    }
+    header {
+      text-align: center;
+      padding: 2em 1em;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+      font-weight: 600;
+    }
+    main {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 1em;
+    }
+    h2 {
+      font-size: 1.3em;
+      margin-top: 2em;
+    }
+    p, li {
+      line-height: 1.6;
+    }
+    ul {
+      padding-left: 1.2em;
+    }
+    a {
+      color: #007aff;
+      text-decoration: none;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9em;
+      color: #999;
+      padding: 2em 1em;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Support</h1>
+  </header>
+
+  <main>
+    <p>If you need help, have a question, or want to report an issue — we're here to help.</p>
+
+    <h2>Contact</h2>
+    <p>Email us at: <a href="mailto:minima.apps@protonmail.com">minima.apps@protonmail.com</a><br>
+    We try to respond to support messages as soon as possible.</p>
+
+    <h2>Frequently Asked Questions</h2>
+    <ul style="list-style-type: disc; padding-left: 1.5em;">
+
+      <li><strong>Does MinimaSTEPS work offline?</strong><br>
+      Yes. The app is fully offline and does not communicate with any servers.</li>
+
+      <li><strong>Does MinimaSTEPS use HealthKit?</strong><br>
+      No. MinimaSTEPS uses CoreMotion only (Motion & Fitness permission).</li>
+
+      <li><strong>Why does the app request Motion & Fitness permission?</strong><br>
+      Step counting requires Apple’s Motion access. Without it, Today cannot show live step counts.</li>
+
+      <li><strong>What happens if I deny Motion permission?</strong><br>
+      Today will show “unavailable”. Week and Month can still display previously stored local history (if available), but new data will not be recorded until permission is granted.</li>
+
+      <li><strong>Does MinimaSTEPS sync with iCloud?</strong><br>
+      No. The app does not use iCloud or any external servers. All history is stored locally on your iPhone unless you manually export it.</li>
+
+      <li><strong>Can I back up my step history?</strong><br>
+      Yes. Use “Export History” in Settings to create a JSON backup you can store in Files or elsewhere.</li>
+
+      <li><strong>Can I restore history on a new device?</strong><br>
+      Yes. Use “Import History” in Settings and select a previously exported JSON file.</li>
+
+      <li><strong>Will importing overwrite my existing history?</strong><br>
+      No. Import merges using “max-merge” semantics (the app will never decrease a day’s steps).</li>
+
+      <li><strong>The numbers look wrong. Why?</strong><br>
+      Step counts come from Apple’s system frameworks and may vary based on device conditions, permissions, and how you carry your iPhone.</li>
+
+      <li><strong>Why should I open the app regularly?</strong><br>
+      MinimaSTEPS syncs recent step data while the app is in use. To ensure that your recent activity is stored in the local history archive, open the app periodically. The app does not run in the background and does not perform automatic background synchronization.</li>
+
+      <li><strong>Can you recover my history if I delete the app?</strong><br>
+      No. The app is offline and does not upload your data anywhere. We recommend exporting backups periodically.</li>
+
+      <li><strong>Is MinimaSTEPS available for iPad?</strong><br>
+      No. The app is designed for iPhone only (portrait mode, dark-only).</li>
+
+    </ul>
+
+  </main>
+
+  <footer>
+    © 2026 MinimaSTEPS<br>
+    <a href="index.html">Home</a> ·
+    <a href="privacy.html">Privacy Policy</a> ·
+    <a href="terms.html">Terms of Use</a>
+  </footer>
+
+</body>
+</html>
